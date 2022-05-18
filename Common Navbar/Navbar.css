@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Kite+One&family=Rambla:ital,wght@0,700;1,700&family=Stardos+Stencil:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=IBM+Plex+Sans&family=Kite+One&family=Rambla:ital,wght@0,700;1,700&family=Stardos+Stencil:wght@700&display=swap");#navbar {
+  background-image: linear-gradient(
+    rgba(4, 9, 30, 0.842),
+    rgba(4, 9, 30, 0.767)
+  );
+  height: fit-content;
+  padding: 0px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top: -8px;
+}
+#navbar ul {
+  justify-content: space-between;
+  margin-top: 0px;
+}
+#navbar ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 10px 15px 10px 15px;
+  margin-top: 0px;
+}
+#navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: IBM Plex Sans;
+  letter-spacing: 1px;
+  padding: 10px 10px;
+  border-radius: 5px; 
+  margin-top: 0px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 200px;
+  box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black !important;
+  padding: 10px 30px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+.dropdown-button {
+  background-color: transparent;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-family: IBM Plex Sans;
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+.dropdown-content a:hover {
+  background-color: rgba(172, 169, 169, 0.4);
+  border-radius: 25%;
+  height: 30px;
+  text-shadow: 0px 3px rgba(4, 9, 30, 0.137);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropdown-button {
+  background-color: rgba(172, 169, 169, 0.4);
+}
+
+.search {
+  float: left;
+  height: 25px;
+  width: 250px;
+  padding: 5px 0px 5px 10px;
+  border: none;
+  font-size: 16px;
+  position: absolute;
+  right:35px;
+  outline: none;
+  margin-top: -15px;
+  border-radius: 5px;
+}
+
+#login-page-button {
+  position: absolute;
+  left: 30px;
+  margin-top: -8px;
+}
+#login-page-button a:hover {
+  background-color: rgba(172, 169, 169, 0.4);
+}
+#login-page-button a {
+  text-decoration: none;
+  font-family: sans-serif;
+  background-color: rgba(5, 55, 221, 0.705);
+  padding: 5px;
+  padding-right: 15px;
+  font-size: 10px;
+  border-radius: 7px;
+  color: white;
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membership</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b8e0ff78ed.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+      * {
+        margin: 0; 
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(184, 236, 218);
+      }
+      .container {
+        background-color: white;
+        width: 130vh;
+        display: flex;
+        box-shadow: 0px 0px 10px black;
+        border-radius: 10px;
+      }
+      .container-left {
+        border-radius: 10px 0px 0px 10px;
+        padding: 60px;
+        width: 70%;
+      }
+      .container h3 {
+        font-family: sans-serif;
+        color: rgb(17, 17, 153);
+      }
+      .heading {
+        font-size: 40px;
+        font-family: roboto;
+        text-transform: uppercase;
+      }
+      .details {
+        font-size: 18px;
+        word-spacing: 1px;
+        font-family: poppins;
+        color: rgb(17, 17, 153);
+      }
+      button {
+        display: flex;
+        margin-top: 20px;
+        background-color: white;
+        border: 1px solid lightgray;
+        padding: 0.7em;
+        padding-left: 2rem;
+        width: 95%;
+        font-size: 25px;
+        font-family: roboto;
+        position: relative;
+      }
+      .buttons a {
+        text-decoration: none;
+      }
+      button:hover {
+        color: rgb(15, 196, 15);
+        font-weight: 600;
+        border: 2px solid rgb(15, 196, 15);
+      }
+      .right-arrow {
+        color: rgb(25, 223, 25);
+        position: absolute;
+        left: 95%;
+      }
+      .back-button {
+        text-align: center;
+        padding-top: 30px;
+        font-family: poppins;
+      }
+      .back-button a {
+        text-decoration: none;
+        color: red;
+      }
+      .back-button a:hover {
+        border-radius: 10px;
+        padding: 5px 10px;
+        cursor: pointer;
+        border: 1px solid red;
+      }
+      .container-right {
+        width: 30%;
+        background:linear-gradient(130deg,rgb(98, 187, 223),rgb(25, 25, 153));
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0px 10px 10px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        border-radius: 10%;
+      }
+      .benefits {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+      }
+      .benefits li {
+        margin-top: 30px;
+        color: white;
+        font-size: 17px;
+        font-family: roboto;
+      }
+      @media screen and (max-width: 768px) {
+        .container-left{
+          width:100%;
+        }
+        .container-right {
+          display: none;
+        }
+        .heading{
+          font-size:25px;
+        }
+        .container h3{
+          font-size:10px;
+        }
+        button{
+          font-size:18px;
+        }
+        .details{
+          font-size:15px;
+        }
+        .back-button{
+          font-size: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-left">
+        <h3>Sportistan : Sports Joining Club</h3>
+        <br />
+        <p class="heading">Become a member</p>
+        <br />
+        <p class="details">
+          To get all benefits of our club and more familier with us <br />join
+          our Membership program.
+        </p>
+        <br />
+        <div class="buttons">
+          <a href="../Payment/Payment.html">
+            <button>
+              Rs.299 / 1-Month <i class="fas fa-angle-right right-arrow"></i>
+            </button>
+          </a>
+          <a href="../Payment/Payment.html">
+            <button>
+              Rs.1499 / 6-Month<i class="fas fa-angle-right right-arrow"></i>
+            </button>
+          </a>
+          <a href="../Payment/Payment.html">
+            <button>
+              Rs.2899 / Year<i class="fas fa-angle-right right-arrow"></i>
+            </button>
+          </a>
+        </div>
+        <p class="back-button">
+          <a href="../Home/Home_page.html">
+            <i class="fas fa-arrow-left"></i> &nbsp; &nbsp;BACK
+          </a>
+        </p>
+      </div>
+      <div class="container-right">
+        <img src="sportistan-logo.png" />
+        <div class="benefits">
+          <ul>
+            <li>All equipments</li>
+            <li>Non-marking shoes</li>
+            <li>Member T-shirt</li>
+            <li>Trainer/Coach</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

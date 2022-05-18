@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ's</title>
+    <script src="https://kit.fontawesome.com/b8e0ff78ed.js" crossorigin="anonymous"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+      body {
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(faq-background.png);
+        background-size:cover;
+        min-height:700px;
+      }
+      #faq {
+        text-align:left;
+        font-family:roboto;
+        color:rgb(251, 255, 0);
+        font-size: 50px;
+        margin-top: 20px;
+        font-weight:600;
+        margin-left:50px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .find {
+        height: 40px;
+        width: 400px;
+        font-weight: 500;
+        font-size: 20px;
+        border-radius:4px 0px 0px 4px;
+        border:none;
+        margin-left:190px;
+        margin-top: 80px;
+        padding-left:15px;
+        box-shadow:0px 3px 10px black;
+      }
+      summary {
+        font-size:17px;
+        font-family: sans-serif;
+        font-weight: 600;
+        color: #333;
+        background-color: white;
+        padding:15px;
+        outline: none;
+        border-radius:40px;
+        text-align: left;
+        cursor: pointer;
+        position: relative;
+        width:700px;
+        margin-top: 30px;
+        margin-left: 60px;
+      }
+      summary:hover{
+        font-size:18px;
+      }
+      details > summary::after {
+        position: absolute;
+        content: "+";
+        right: 30px;
+      }
+      details[open] > summary::after {
+        position: absolute;
+        content: "-";
+        right: 30px;
+      }
+      details > summary::-webkit-details-marker {
+        display: none;
+      }
+      p,ul{
+        color:white;
+        font-family: "Roboto", sans-serif;
+        margin-left: 80px;
+        font-size:20px;
+      }
+      .search{
+        background-color: skyblue;
+        padding:13px;
+        border-radius: 0px 4px 4px 0px;
+        border:none;
+        box-shadow:3px 3px 10px black;
+      }
+      .search-icon{
+        display:flex;
+        align-items:flex-end;
+      }
+
+      @media screen and (max-width:1100px) {
+        #faq{
+          font-size: 35px;
+          margin-left: 120px;
+        }
+        .find {
+        height: 35px;
+        width: 350px;
+        margin-left:200px;
+        font-size: 18px;
+        }
+        summary{
+          width:700px;
+          padding:12px;
+          font-size:15px;
+        }
+        .search{
+          padding:10.5px;
+        }
+        summary:hover{
+          font-size:18px;
+        }
+        p,ul{
+          font-size:16px;
+        }
+      }
+      @media screen and (max-width:900px) {
+        #faq{
+          font-size: 30px;
+          margin-left: 120px;
+        }
+        .find {
+          height: 33px;
+          width: 320px;
+          margin-left:180px;
+          font-size: 16px;
+        }
+        summary{
+          width:600px;
+          padding:12px;
+          font-size:15px;
+        }
+        .search{
+          padding:9.5px;
+        }
+        summary:hover{
+          font-size:18px;
+        }
+        p,ul{
+          font-size:16px;
+        }
+      }
+      @media screen and (max-width:750px) {
+        #faq{
+          font-size: 25px;
+          margin-left:20px;
+        }
+        .find {
+          height: 28px;
+          width: 250px;
+          margin-left:50px;
+          font-size: 15px;
+        }
+        summary{
+          width:400px;
+          padding:12px;
+          font-size:13px;
+          margin-left:20px;
+        }
+        .search{
+          padding:7px;
+        }
+        summary:hover{
+          font-size:14px;
+        }
+        p,ul{
+          font-size:14px;
+          margin-left:30px;
+        }
+      }
+      @media screen and (max-width:600px) {
+        #faq{
+          font-size: 20px;
+          margin-left:5px;
+        }
+        .find {
+          height: 25px;
+          width: 200px;
+          margin-left:20px;
+          font-size: 12px;
+        }
+        summary{
+          width:300px;
+          padding:10px;
+          font-size:10px;
+          margin-left:10px;
+        }
+        .search{
+          padding:5.5px;
+        }
+        summary:hover{
+          font-size:10px;
+        }
+        p,ul{
+          font-size:10px;
+          margin-left:20px;
+        }
+      }
+      
+    </style> 
+  </head>
+  <body> 
+    <div class=body-content>
+    <div id="faq">Frequently Asked Questions</div>
+    <form class=search-icon><input class="find" placeholder="Enter your Question" /><button class=search><i class="fas fa-search"></i></button></form>
+    <br />
+    <details>
+      <summary>Can I cancel my payment any time?</summary>
+      <div>
+        <p>No , once payment done you can not cancel it.</p>
+      </div>
+    </details>
+    <details>
+      <summary>Can I join only for 1 month?</summary>
+    <div>
+        <p>No , there are only three options available for joining our club:
+          <ul>
+              <li>3-month Membership</li>
+              <li>6-month Membership</li>
+              <li>1-year Membership</li>
+          </ul>
+        </p>
+      </div>
+    </details>
+    <details>
+      <summary>Is there any Medical facility or Not?</summary>
+      <div>
+        <p>Yes , We have Expert team of physiotherapist & Doctors.<br>We also have First Aid facility. </p>
+      </div>
+    </details>
+    <details>
+      <summary>Can I pay via Google pay or Paytm?</summary>
+      <div>
+        <p>Yes , absolutely you can pay via any UPI id.</p>
+      </div>
+    </details>
+    <details>
+      <summary>How much fine charge on damage Sports equipment?</summary>
+    <div>
+        <p>It varies between Rs.500 to 2000 according to the damage.</p>
+      </div>
+    </details>
+  </div>
+  </body>
+</html>

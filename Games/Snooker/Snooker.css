@@ -1,0 +1,70 @@
+.snooker-details{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+body {
+  background-size: 3500px;
+  height: 700px;
+}
+.heading {
+  font-weight: bold;
+  font-family: "Merriweather", serif;
+  font-size: 55px;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: -8px;
+}
+
+.Achievements {
+  float: right;
+  position: absolute;
+  top: 150px;
+  left:77%;
+}
+
+.imgscroll {
+  width: 300px;
+  height: 400px;
+  float: right;
+  border-radius: 10px;
+  position: absolute;
+  top: 220px;
+  left:77%;
+}
+
+.imgscroll h1 {
+  text-align: center;
+}
+.imgscroll img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.tournaments {
+  width: 1000px;
+}
+
+.tournaments h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 25px;
+  font-family: "Merriweather", serif;
+}
+
+.tournaments ul li {
+  font-size: 20px;
+  padding: 10px;
+  font-family: "Vollkorn", serif;
+}
+
+.snooker {
+  width: 1000px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.snooker img {
+  width: 400px;
+  height: 220px;
+  border-radius: 10px;
+}
