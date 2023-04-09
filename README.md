@@ -4,5 +4,5 @@ Based on : Sports
 
 Website idea : Naveen Soni (me)
 
-Team members : 4
+Project team members : 4
 
